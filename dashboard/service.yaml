@@ -9,5 +9,5 @@ spec:
   ports:
   - targetPort: 8443
     nodePort: 30001
-    port: 8443
+    port: 443
     protocol: TCP
