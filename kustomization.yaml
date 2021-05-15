@@ -3,4 +3,5 @@ kind: Kustomization
 namespace: monitoring
 resources:
   - namespace.yaml
-  - prometheus-bundle.yaml
+  - prometheus/prometheus-bundle.yaml
+  - prometheus/prometheus-nodeport.yaml
