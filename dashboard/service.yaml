@@ -8,6 +8,6 @@ spec:
     name: kubernetes-dashboard
   ports:
   - targetPort: 8443
-    nodePort: 39000
+    nodePort: 30001
     port: 8443
     protocol: TCP
