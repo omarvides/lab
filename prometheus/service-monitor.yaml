@@ -1,0 +1,12 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: node-app
+  labels:
+    context: backend
+spec:
+  selector:
+    matchLabels:
+      app: node-app
+  endpoints:
+  - port: http
