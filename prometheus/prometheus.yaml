@@ -7,19 +7,6 @@ spec:
   podMonitorSelector:
     matchLabels:
       context: backend
-  resources:
-    requests:
-      memory: 50Mi
-  enableAdminAPI: false
-
----
-
-apiVersion: monitoring.coreos.com/v1
-kind: Prometheus
-metadata:
-  name: prometheus
-spec:
-  serviceAccountName: prometheus
   serviceMonitorSelector:
     matchLabels:
       context: backend
