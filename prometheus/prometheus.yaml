@@ -7,9 +7,8 @@ spec:
   podMonitorSelector:
     matchLabels:
       context: backend
-  serviceMonitorSelector:
-    matchLabels:
-      context: backend
+  serviceMonitorNamespaceSelector: {}
+  serviceMonitorSelector: {}
   resources:
     requests:
       memory: 50Mi
